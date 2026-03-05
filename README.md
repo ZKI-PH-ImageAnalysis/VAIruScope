@@ -43,7 +43,8 @@ VAIruScope/
 ├── pred_infection/ #images with predicted infected/non-infected cells
 │   ├── image1.tif
 │   ├── image2.tif
-│   └── ...
+│   ├── ...
+│   └── numbers.txt #cell counts (infectd/non-infected) for different days/viral concentrations
 ```
 
 ## Example images
@@ -90,5 +91,6 @@ Below is an example showing the original image, the predicted infection and cent
 ```
 
 [Paper on bioRxiv](https://www.biorxiv.org/content/10.64898/2026.01.15.699499v1)
+
 
 
