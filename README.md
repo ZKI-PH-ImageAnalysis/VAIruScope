@@ -2,7 +2,7 @@
 # Label-free detection of individual virus-infected cells using deep learning 
 
 This repository provides the inference pipeline for VAIruScope, a deep learning framework for the label-free detection of virus-infected cells from light microscopy images.
-The pipeline takes brightfield or phase-contrast images as input and predicts:
+The pipeline takes brightfield or phasecontrast images as input and predicts:
 - cell locations
 - infection status for each cell
 The model weights were trained as described in the accompanying manuscript.
@@ -26,6 +26,7 @@ Due to modifications required for our architecture, the default `UperNetForSeman
 ## Inference
 
 Update directories in `inference.py` and run `python inference.py` to start prediction.
+
 Update directories in `classify_cells.py` and run `python classify_cells.py`
 
 ## Output
@@ -69,13 +70,24 @@ Below is an example showing the original image, the predicted infection and cent
 
 <tr>
 <td><img src="docs/original.tif" width="220"></td>
-<td><img src="docs/infection_mask.jpg" width="110"></td>
-<td><img src="docs/center_mask.jpg" width="110"></td>
+<td><img src="docs/infection_mask.jpg" width="220"></td>
+<td><img src="docs/center_mask.jpg" width="220"></td>
 <td><img src="docs/prediction.tif" width="220"></td>
 </tr>
 </table>
 
 ## Citation
 
-Juliane Pfeil, Corinna Siegmund, Eva Mueller, Shakhnaz Akhmedova, Alexandra Loewe, Anne Kauter, Tobias Tertel, Bernd Giebel, Michael Laue, Vu Thuy Khanh Le-Trilling, Christian Sieben, Mirko Trilling, Roland Schwarzer, Nils Körber. Label-free detection of individual virus-infected cells using deep learning. bioRxiv. 2026:2026-01
+```
+@article{pfeil2026label,
+  title={Label-free detection of individual virus-infected cells using deep learning},
+  author={Pfeil, Juliane and Siegmund, Corinna and Mueller, Eva and Akhmedova, Shakhnaz and Loewe, Alexandra and Kauter, Anne and Tertel, Tobias and Giebel, Bernd and Laue, Michael and Le-Trilling, Vu Thuy Khanh and Sieben, Christian and Trilling, Mirko and Schwarzer, Roland and Körber Nils},
+  journal={bioRxiv},
+  pages={2026--01},
+  year={2026},
+  publisher={Cold Spring Harbor Laboratory}
+}
+```
+
 [Paper on bioRxiv](https://www.biorxiv.org/content/10.64898/2026.01.15.699499v1)
+
