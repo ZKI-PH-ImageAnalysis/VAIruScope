@@ -69,10 +69,10 @@ Below is an example showing the original image, the predicted infection and cent
 </tr>
 
 <tr>
-<td><img src="docs/original.tif" width="220"></td>
+<td><img src="docs/original.jpg" width="220"></td>
 <td><img src="docs/infection_mask.jpg" width="220"></td>
 <td><img src="docs/center_mask.jpg" width="220"></td>
-<td><img src="docs/prediction.tif" width="220"></td>
+<td><img src="docs/prediction.jpg" width="220"></td>
 </tr>
 </table>
 
@@ -90,4 +90,5 @@ Below is an example showing the original image, the predicted infection and cent
 ```
 
 [Paper on bioRxiv](https://www.biorxiv.org/content/10.64898/2026.01.15.699499v1)
+
 
