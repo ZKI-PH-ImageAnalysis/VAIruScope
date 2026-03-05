@@ -1,6 +1,0 @@
-checkpoint/*.safetensors
-*.safetensors
-
-# model weights
-checkpoint/*.safetensors
-*.safetensors
