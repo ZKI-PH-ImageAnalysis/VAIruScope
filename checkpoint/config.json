@@ -1,0 +1,36 @@
+{
+  "architectures": [
+    "UperNetForSemanticSegmentation"
+  ],
+  "auxiliary_channels": 256,
+  "auxiliary_concat_input": false,
+  "auxiliary_in_channels": 384,
+  "auxiliary_loss_weight": 0.4,
+  "auxiliary_num_convs": 1,
+  "backbone": "microsoft/swin-large-patch4-window12-384",
+  "backbone_config": null,
+  "backbone_kwargs": {
+    "out_features": [
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4"
+    ]
+  },
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "loss": null,
+  "loss_ignore_index": 3,
+  "model_type": "upernet",
+  "pool_scales": [
+    1,
+    2,
+    3,
+    6
+  ],
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.3",
+  "use_auxiliary_head": false,
+  "use_pretrained_backbone": true,
+  "use_timm_backbone": false
+}
