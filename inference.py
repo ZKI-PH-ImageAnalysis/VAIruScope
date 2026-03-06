@@ -31,8 +31,8 @@ def collect_paths(base_path):
                   ])
 
 
-base_path = "...VAIruScope/example_images/" #path to the main folder with the data (brightfield/phase contrast microscopic images)
-input_paths_test = collect_paths(f"{base_path})
+base_path = ".../VAIruScope/example_images/" #path to the main folder with the data (brightfield/phase contrast microscopic images)
+input_paths_test = collect_paths(f"{base_path}")
 
 save_dir = ".../VAIruScope/inference/" #path to the folder where the results will be saved
 os.makedirs(save_dir, exist_ok=True)
@@ -67,5 +67,5 @@ for idx in range(len(input_paths_test)):
         path = save_dir + f"{os.path.splitext(os.path.basename(input_paths_test[idx]))[0]}_center.tif"
         cv2.imwrite(path, logits[0])
         
-        path = save_dir + f"{os.path.splitext(os.path.basename(input_paths_test[idx]))[0]}_egfp.tif"
+        path = save_dir + f"{os.path.splitext(os.path.basename(input_paths_test[idx]))[0]}_infection.tif"
         cv2.imwrite(path, logits[1])

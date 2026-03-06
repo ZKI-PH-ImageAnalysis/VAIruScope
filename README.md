@@ -2,6 +2,9 @@
 # Label-free detection of individual virus-infected cells using deep learning 
 
 This repository provides the inference pipeline for VAIruScope, a deep learning framework for the label-free detection of virus-infected cells from light microscopy images.
+
+![VAIruScope: Workflow for label-free detection of virus-infected cells]("docs/VAIruScope_workflow.png")
+
 The pipeline takes brightfield or phasecontrast images as input and predicts:
 - cell locations
 - infection status for each cell
@@ -15,7 +18,7 @@ git clone https://github.com/ZKI-PH-ImageAnalysis/VAIruScope.git
 cd VAIruScope
 conda env create -f env.yml
 conda activate VAIruScope
-pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
 ```
 
 ## Patch the UperNet model
@@ -43,8 +46,7 @@ VAIruScope/
 ├── pred_infection/ #images with predicted infected/non-infected cells
 │   ├── image1.tif
 │   ├── image2.tif
-│   ├── ...
-│   └── numbers.txt #cell counts (infectd/non-infected) for different days/viral concentrations
+│   └── ...
 ```
 
 ## Example images

@@ -7,7 +7,7 @@
   "auxiliary_in_channels": 384,
   "auxiliary_loss_weight": 0.4,
   "auxiliary_num_convs": 1,
-  "backbone": "microsoft/swin-large-patch4-window12-384",
+  "backbone": "microsoft/swin-large-patch4-window7-224-in22k",
   "backbone_config": null,
   "backbone_kwargs": {
     "out_features": [
