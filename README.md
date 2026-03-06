@@ -3,7 +3,7 @@
 
 This repository provides the inference pipeline for VAIruScope, a deep learning framework for the label-free detection of virus-infected cells from light microscopy images.
 
-![VAIruScope: Workflow for label-free detection of virus-infected cells]("docs/VAIruScope_workflow.png")
+<img src="docs/VAIruScope_workflow.png" alt="VAIruScope workflow" width="800"/>
 
 The pipeline takes brightfield or phasecontrast images as input and predicts:
 - cell locations
@@ -40,7 +40,7 @@ After running the pipeline, the following output directories are created:
 VAIruScope/
 │
 ├── inference/ #raw model inference output (predicted infection and center masks)
-│   ├── image1_egfp.tif
+│   ├── image1_infection.tif
 │   ├── image1_center.tif
 │   └── ...
 ├── pred_infection/ #images with predicted infected/non-infected cells
@@ -93,6 +93,7 @@ Below is an example showing the original image, the predicted infection and cent
 ```
 
 [Paper on bioRxiv](https://www.biorxiv.org/content/10.64898/2026.01.15.699499v1)
+
 
 
 
