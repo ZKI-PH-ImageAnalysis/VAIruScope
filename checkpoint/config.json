@@ -1,4 +1,5 @@
 {
+  "_name_or_path": "/scratch/projekte/ZKI_PH3_CenSeFormer/mmsegmentation/VAIruScope2.0_results/v33/run5_train_2.0_h200/ckpts/checkpoint-41990",
   "architectures": [
     "UperNetForSemanticSegmentation"
   ],
@@ -7,7 +8,7 @@
   "auxiliary_in_channels": 384,
   "auxiliary_loss_weight": 0.4,
   "auxiliary_num_convs": 1,
-  "backbone": "microsoft/swin-large-patch4-window7-224-in22k",
+  "backbone": "/scratch/projekte/ZKI_PH3_CenSeFormer/mmsegmentation/pretrained_swin_large/",
   "backbone_config": null,
   "backbone_kwargs": {
     "out_features": [
@@ -19,7 +20,6 @@
   },
   "hidden_size": 512,
   "initializer_range": 0.02,
-  "loss": null,
   "loss_ignore_index": 3,
   "model_type": "upernet",
   "pool_scales": [
